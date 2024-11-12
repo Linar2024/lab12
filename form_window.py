@@ -18,8 +18,6 @@ class FormWindow(QDialog):
             self.name_text = QLineEdit()
         else:
             self.name_text = QLineEdit(object.split(":")[1])
-        if object is None:
-            self.name_text = object
         name_input = QHBoxLayout()
         name_input.addWidget(label)
         name_input.addWidget(self.name_text)
